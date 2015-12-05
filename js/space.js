@@ -1,21 +1,8 @@
 $(document).ready(function(){
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  $(".btn-primary").on("click", function(e){
+    e.preventDefault();
+  
+  });
 
 
   function buildThumbnail(photoData) {
