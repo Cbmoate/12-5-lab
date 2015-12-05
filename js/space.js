@@ -1,17 +1,8 @@
 $(document).ready(function(){
-<<<<<<< HEAD
-  $.ajax(){
-    type: "GET",
-    url: "http://api.open-notify.org/iss-now.json",
-      console.log(locationData)
-  }
-})
-=======
   $(".btn-primary").on("click", function(e){
     e.preventDefault();
   
   });
-
   function buildThumbnail(photoData) {
     var photoUrl = "https://farm" + photoData.farm;
     photoUrl += ".staticflickr.com/" + photoData.server;
@@ -63,4 +54,4 @@ $(document).ready(function(){
     }
   }
 });
->>>>>>> aa7802533abfcfca042411f5c031ecf3a19d36ea
+
