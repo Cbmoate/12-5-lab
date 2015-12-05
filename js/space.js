@@ -6,13 +6,12 @@ $(document).ready(function(){
     googleApiUrl += "key=AIzaSyADnEkRq-1ke4NWknv2pxRajx4f1vGlscg";
     googleApiUrl += "&address=" + userAddress;
 
-    .ajax({
+    $.ajax({
       type: "GET",
       url: "googleApiUrl",
       success: googleApiSuccessHandler
     });
   });
-
   function buildThumbnail(photoData) {
     var photoUrl = "https://farm" + photoData.farm;
     photoUrl += ".staticflickr.com/" + photoData.server;
@@ -64,3 +63,4 @@ $(document).ready(function(){
     }
   }
 });
+
